@@ -37,6 +37,23 @@ a {
   display: flex;
   gap: 15px;
 }
+.topbar__right__cart__notice{
+  font-size: 9px;
+  width: 1.1rem;
+  height: 1.1rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  top: -10px;
+  right: -7px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 0, 0, 0.74);
+}
+.fa-cart-shopping {
+  position: relative;
+}
 /* Head Topic */
 h1 {
   margin-left: 40px;
@@ -52,13 +69,16 @@ h1 {
 }
 /* main left */
 .main__left__trash-border {
-  width: 25px;
-  height: 25px;
-  border: 1px solid;
+  width: 35px;
+  height: 35px;
+  font-size: 1.2rem;
+  border: 1px solid rgb(16, 163, 114);
+  color: rgb(60, 199, 153);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .main__left {
   width: 50%;
@@ -72,33 +92,72 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 60px;
   border-radius: 10px;
   flex-grow: 1;
   padding: 10px;
 }
+.main__left__card__detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start  ;
+  gap: 15px;
+}
 .main__left__card__display__top,
 .main__left__card__display__bottom {
-    width: 9rem;
-    height: 9rem;
+  width: 9rem;
+  height: 9rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 20px;
-  gap: 5px;
+  gap: 15px;
   border-radius: 13px;
 }
 .main__left__card__display__top {
   background-image: linear-gradient(
     to top right,
-    rgb(113, 226, 230) 50%,
-    rgb(40, 129, 141) 80%
+    rgb(156, 243, 255) 50%,
+    rgb(113, 226, 230) 80%
   );
-
 }
 .main__left__card__display__bottom {
-  background-image: linear-gradient(to top right, orange 50%, yellow 80%);
+  background-image: linear-gradient(to top right, rgb(245, 203, 127) 50%, rgb(238, 238, 118) 80%);
 }
+.main__left__card__display__top i,
+.main__left__card__display__bottom i {
+  font-size: 1.2rem;
+  background-color: rgb(231, 232, 233);
+  width: 40%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+.main__left__card__detail__levelDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.card_price {
+  font-weight: 600;
+}
+.main__left__card__detail__levelDisplay .leveldisplayTop2,
+.main__left__card__detail__levelDisplay .leveldisplayTop3{
+  background-color: rgb(201, 199, 199);
+}
+
+.main__left__card__detail__levelDisplay div {
+  background-color: rgb(9, 194, 132);
+  width: 1rem;
+  height: 1rem;
+  text-align: center;
+  border-radius: 50%;
+}
+
 /* main right */
 .main__right {
   width: 50%;
@@ -122,6 +181,11 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.main__right__coupon i {
+  margin-right: 10px;
+  color: rgb(7, 83, 83);
+
 }
 .main__right__applyButton {
     width: 8rem;
