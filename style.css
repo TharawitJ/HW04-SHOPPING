@@ -103,6 +103,7 @@ h1 {
   justify-content: center;
   align-items: start  ;
   gap: 15px;
+  width: 144px;
 }
 .main__left__card__display__top,
 .main__left__card__display__bottom {
@@ -114,6 +115,7 @@ h1 {
   padding: 20px;
   gap: 15px;
   border-radius: 13px;
+  flex-shrink: 0;
 }
 .main__left__card__display__top {
   background-image: linear-gradient(
